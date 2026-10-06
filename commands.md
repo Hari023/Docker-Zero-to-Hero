@@ -56,3 +56,21 @@ Run a command in a running container.
 ### docker network
 
 Manage Docker networks such as creating and removing networks, and connecting containers to networks.
+
+## docker volume inspect "name of volume"
+
+EXAMPLE:
+ubuntu@ip-172-31-22-249:~/Docker-Zero-to-Hero$ docker volume inspect inban
+[
+    {
+        "CreatedAt": "2026-10-06T15:46:59Z",
+        "Driver": "local",
+        "Labels": null,
+        "Mountpoint": "/var/lib/docker/volumes/inban/_data",
+        "Name": "inban",
+        "Options": null,
+        "Scope": "local"
+    }
+]
+
+
