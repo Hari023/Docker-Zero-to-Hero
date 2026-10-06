@@ -68,13 +68,17 @@ in the container.
 | More dependent on host filesystem | More portable/manageable by Docker       |
 
 
-##Attaching volume to our container
-docker run -d --mount source=inban,target=/app hari023/my-first-docker-image:latest
+**##Attaching volume to our container**
+
+d**ocker run -d --mount source=inban,target=/app hari023/my-first-docker-image:latest**
 
 ##Meaning
 docker run	->  Create and start a container
+
 -d -> 	Run in the background
+
 --mount  -> source=inban,target=/app	Attach the existing volume inban at /app inside the container
+
 hari023/my-first-docker-image:latest	->  The image to run
 
 
