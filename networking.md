@@ -46,6 +46,15 @@ This new network can be attached to the containers, when you run these container
 
 ```
 docker run -d --net=my_bridge --name db training/postgres
+
+| Part                | Meaning                                                 |
+| ------------------- | ------------------------------------------------------- |
+| `docker run`        | Create and start a new container                        |
+| `-d`                | Run in **detached/background** mode                     |
+| `--net=my_bridge`   | Connect the container to the Docker network `my_bridge` |
+| `--name db`         | Give the container the name **db**                      |
+| `training/postgres` | Docker image used to create the container               |
+
 ```
 
 This way, you can run multiple containers on a single host platform where one container is attached to the default network and 
